@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className='logo-div'>
       <StaticImage
-        src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1701104759/logo-v2-1_iai4zt.webp'
+        src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1701732027/logo-with_text_mghwmb.webp'
         alt='Logo'
         className='logo'
       />

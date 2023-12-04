@@ -2,7 +2,7 @@ import * as React from 'react';
 import Stack from 'react-bootstrap/Stack';
 import { Link } from 'gatsby';
 import OffCanvasMenu from './offcanvas-menu';
-// import Logo from './logo';
+import Logo from './logo';
 
 const Header = () => {
   return (
@@ -12,8 +12,7 @@ const Header = () => {
         <div>
           <Link to='/'>
             <div className='stack1'>
-              {/* <Logo /> */}
-              <span>STEVE KIM</span>
+              <Logo />
             </div>
           </Link>
         </div>
