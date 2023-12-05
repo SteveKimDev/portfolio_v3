@@ -1,0 +1,114 @@
+/* ///// FONTS ///// */
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ///// CUSTOM CSS ///// */
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #111111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary-color {
+  color: #111111;
+}
+
+.secondary-color {
+  color: #ffffff;
+}
+
+.accent-color {
+  color: #8ec8f3;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (max-width: 991px) {
+  section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  section {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+/* a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s linear;
+} */
+
+/* a:hover {
+  color: #ffffff;
+} */
+
+.relative {
+  position: relative;
+}
+
+/* .horizontal-rule {
+  color: #dddddd;
+  opacity: 0.5;
+  margin: 150px 0;
+}
+
+@media (max-width: 991px) {
+  .horizontal-rule {
+    margin: 125px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .horizontal-rule {
+    margin: 100px 0;
+  }
+} */
+
+/* .cards {
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .cards {
+    padding: 30px;
+  }
+} */
+
+/* .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .space::after {
+  content: ' ';
+  white-space: pre;
+} */

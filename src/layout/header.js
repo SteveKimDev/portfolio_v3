@@ -1,8 +1,13 @@
 import * as React from 'react';
 import Stack from 'react-bootstrap/Stack';
 import { Link } from 'gatsby';
+
+// Component Imports
 import OffCanvasMenu from './offcanvas-menu';
 import Logo from './logo';
+
+// CSS
+import './styles/header.css';
 
 const Header = () => {
   return (

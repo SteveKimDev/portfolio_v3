@@ -1,0 +1,119 @@
+/* Footer Section */
+.footer-section {
+  margin-bottom: 100px;
+}
+
+.space::after {
+  content: ' ';
+  white-space: pre;
+}
+
+.title-section,
+.title-line {
+  display: flex;
+}
+
+.title-line p {
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.email-div {
+  font-size: 7.05vw;
+  letter-spacing: 1px;
+  margin-top: -30px;
+}
+
+.email-div a::after {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  content: ' ';
+  background-color: #ffffff;
+  height: 0px;
+  width: 0px;
+  z-index: 100;
+  transition: width 0.75s linear;
+}
+
+.email-div a:hover::after {
+  height: 5px;
+  width: 100%;
+}
+
+.social-div {
+  margin-top: 30px;
+}
+
+.social-span {
+  margin-right: 50px;
+  position: relative;
+}
+
+.social-span a {
+  color: #dddddd;
+}
+.social-span a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: ' ';
+  background-color: #dddddd;
+  height: 0px;
+  width: 0px;
+  z-index: 100;
+  transition: width 0.3s linear;
+}
+.social-span a:hover::after {
+  height: 1px;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .email-div {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .email-div {
+    font-size: 7.8vw;
+    margin-top: -20px;
+  }
+  .email-div a::after {
+    bottom: 5px;
+  }
+  .email-div a:hover::after {
+    height: 3px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-section {
+    margin-bottom: 50px;
+  }
+  .title-section {
+    display: block;
+  }
+  .title-line p {
+    font-size: 7vw;
+    line-height: 50%;
+  }
+  .email-div {
+    font-size: 7.35vw;
+    margin-top: 0;
+    text-align: center;
+  }
+  .email-div a::after {
+    bottom: 0;
+  }
+  .social-div {
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+  .social-span {
+    font-size: 0.9rem;
+    margin: 0 12px;
+  }
+}

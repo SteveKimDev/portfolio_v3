@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Offcanvas, Row, Col } from 'react-bootstrap';
 import { Link } from 'gatsby';
 
+// CSS
+import './styles/header.css';
+
 function OffCanvasMenu({ name, ...props }) {
   const [show, setShow] = useState(false);
 

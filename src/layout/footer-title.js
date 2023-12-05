@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
 
+// CSS
+import './styles/footer.css';
+
 const FooterTitle = () => {
   const LetsConnect = [
     'L',

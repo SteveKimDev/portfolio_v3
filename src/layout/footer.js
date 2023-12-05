@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
 
+// Component Imports
 import FooterTitle from './footer-title';
+
+// CSS
+import './styles/footer.css';
 
 // image hover animation
 const calc = (x, y) => [
