@@ -36,6 +36,10 @@ h6 {
   color: #8ec8f3;
 }
 
+.lt-accent-color {
+  color: #99b2c5;
+}
+
 section {
   margin-left: 10%;
   margin-right: 10%;
@@ -60,15 +64,25 @@ section {
 }
 
 a {
-  color: #8ec8f3;
-  transition: 0.5s linear;
-  font-style: italic;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* a:hover {
-  color: #ffffff;
-} */
+.button {
+  background: linear-gradient(to right, #8ec8f3 50%, #99b2c5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 1s linear, background 0.5s linear;
+  border-radius: 50px;
+  color: #111111;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
 
 .relative {
   position: relative;

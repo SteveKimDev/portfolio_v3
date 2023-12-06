@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { useSpring, animated } from 'react-spring';
 
+//CSS
 import * as Homepage from './homepage.module.css';
 
 const HeroHeadline = () => {
@@ -17,7 +18,7 @@ const HeroHeadline = () => {
     from: { height: '0%' },
     to: { height: '100%' },
     delay: 500,
-    config: { duration: 3000 },
+    config: { duration: 2000, tension: 180, friction: 12 },
   });
   return (
     <animated.div
@@ -28,10 +29,9 @@ const HeroHeadline = () => {
       }}
       className={Homepage.headline}
     >
-      <h1 className={Homepage.headline1}>I'm Steve Kim, A</h1>
-      <h1 className={Homepage.headline2}>Product</h1>
-      <h1 className={Homepage.headline2}>Designer</h1>
-      <h2 className={`accent-color ${Homepage.headline3}`}>
+      <h1 className={`accent-color ${Homepage.headline1}`}>Product</h1>
+      <h1 className={`accent-color ${Homepage.headline1}`}>Designer</h1>
+      <h2 className={`accent-color ${Homepage.headline2}`}>
         With Web Development Experience
       </h2>
       <p className={Homepage.headlineDescription}>
@@ -41,7 +41,7 @@ const HeroHeadline = () => {
         skills.
       </p>
       <div className={Homepage.headlineLinkDiv}>
-        <Link to='/' className={Homepage.headlineLink}>
+        <Link to='/' className='button'>
           <span>Learn more about me</span>
         </Link>
       </div>
