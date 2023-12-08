@@ -88,6 +88,21 @@ a {
   position: relative;
 }
 
+/* floating div */
+.floating-div {
+  animation: floatingDiv 3s ease-in-out 4s infinite;
+}
+
+@keyframes floatingDiv {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* .horizontal-rule {
   color: #dddddd;
   opacity: 0.5;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import Stack from 'react-bootstrap/Stack';
 import { Link } from 'gatsby';
 
@@ -34,23 +35,33 @@ const Header = () => {
     transition: 'background-color 0.3s ease-in-out',
   };
 
+  // fadeIn
+  const fadeIn = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 1000,
+    config: { duration: 1500 },
+  });
+
   return (
     <header style={headerStyle} className='header'>
-      <Stack direction='horizontal' gap={5}>
-        {/* Stack 1 */}
-        <div>
-          <Link to='/'>
-            <div className='stack1'>
-              <Logo />
-            </div>
-          </Link>
-        </div>
+      <animated.div style={fadeIn}>
+        <Stack direction='horizontal' gap={5}>
+          {/* Stack 1 */}
+          <div>
+            <Link to='/'>
+              <div className='stack1'>
+                <Logo />
+              </div>
+            </Link>
+          </div>
 
-        {/* Stack 2 */}
-        <div className='stack2 ms-auto'>
-          <OffCanvasMenu />
-        </div>
-      </Stack>
+          {/* Stack 2 */}
+          <div className='stack2 ms-auto'>
+            <OffCanvasMenu />
+          </div>
+        </Stack>
+      </animated.div>
     </header>
   );
 };

@@ -5,20 +5,67 @@
   height: 100vh;
 }
 
+.hero-section .cube1 {
+  position: absolute;
+  top: 250px;
+  left: 20vw;
+}
+.hero-section .cube1 img {
+  width: 15vw;
+}
+
+.hero-section .cube2 {
+  position: absolute;
+  top: 750px;
+  right: 5vw;
+}
+.hero-section .cube2 img {
+  width: 7vw;
+}
+
+.hero-section .diamond1 {
+  position: absolute;
+  top: 550px;
+  left: 50vw;
+}
+.hero-section .diamond1 img {
+  width: 10vw;
+}
+
+.hero-section .diamond2 {
+  position: absolute;
+  top: 650px;
+  left: 10vw;
+}
+.hero-section .diamond2 img {
+  width: 15vw;
+}
+
+.hero-section .diamond3 {
+  position: absolute;
+  top: 80px;
+  right: 20vw;
+}
+.hero-section .diamond3 img {
+  width: 5vw;
+}
+
 .background-img {
   width: 25vw;
   border-radius: 30px;
   position: absolute;
   top: 16vh;
   right: 4vw;
-  z-index: -1000;
+  z-index: 100;
 }
 
 .headline {
+  position: relative;
   margin-top: 16vh;
   margin-left: 4vw;
   margin-right: 4vw;
   text-transform: uppercase;
+  z-index: 1000;
 }
 
 .headline1 {
@@ -43,9 +90,18 @@
 }
 
 @media (max-width: 1199px) {
-  .hero-section {
-    height: 85vh;
+  .hero-section .cube2 {
+    top: 540px;
   }
+
+  .hero-section .diamond1 {
+    top: 400px;
+  }
+
+  .hero-section .diamond2 {
+    top: 500px;
+  }
+
   .background-img {
     width: 30vw;
     top: 22vh;
@@ -69,8 +125,39 @@
 }
 
 @media (max-width: 991px) {
-  .hero-section {
-    height: 77vh;
+  .hero-section .cube1 {
+    top: 300px;
+  }
+  .hero-section .cube1 img {
+    width: 20vw;
+  }
+
+  .hero-section .cube2 {
+    top: 650px;
+  }
+  .hero-section .cube2 img {
+    width: 12vw;
+  }
+
+  .hero-section .diamond1 {
+    top: 550px;
+  }
+  .hero-section .diamond1 img {
+    width: 15vw;
+  }
+
+  .hero-section .diamond2 {
+    top: 600px;
+  }
+  .hero-section .diamond2 img {
+    width: 20vw;
+  }
+
+  .hero-section .diamond3 {
+    top: 150px;
+  }
+  .hero-section .diamond3 img {
+    width: 10vw;
   }
 
   .background-img {
@@ -99,8 +186,36 @@
 }
 
 @media (max-width: 575px) {
-  .hero-section {
-    height: 100vh;
+  .hero-section .cube1 {
+    top: 200px;
+  }
+  .hero-section .cube1 img {
+    width: 25vw;
+  }
+
+  .hero-section .cube2 {
+    top: 600px;
+  }
+  .hero-section .cube2 img {
+    width: 15vw;
+  }
+
+  .hero-section .diamond1 {
+    top: 500px;
+  }
+  .hero-section .diamond1 img {
+    width: 20vw;
+  }
+
+  .hero-section .diamond2 {
+    top: 600px;
+  }
+  .hero-section .diamond2 img {
+    width: 30vw;
+  }
+
+  .hero-section .diamond3 {
+    top: 100px;
   }
 
   .headline {

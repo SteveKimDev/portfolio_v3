@@ -10,6 +10,7 @@ const HeroHeadline = () => {
   const opacitySpring = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
+    delay: 500,
     config: { duration: 1000 },
   });
 
@@ -17,7 +18,7 @@ const HeroHeadline = () => {
   const heightSpring = useSpring({
     from: { height: '0%' },
     to: { height: '100%' },
-    delay: 500,
+    delay: 1000,
     config: { duration: 2000, tension: 180, friction: 12 },
   });
   return (
